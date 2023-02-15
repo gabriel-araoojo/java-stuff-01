@@ -1,21 +1,10 @@
 import java.util.*;
 
+
 public class Main {
     public static void main(String[] args) {
-        Scanner auxScanner = new Scanner(System.in);
+        User newUser = new User();
 
-        int firstInt = auxScanner.nextInt();
-        int secondInt = auxScanner.nextInt();
-        int greaterInt;
-
-        if(firstInt >= secondInt) {
-            greaterInt = firstInt;
-        }
-
-        else {
-            greaterInt = secondInt;
-        }
-
-        System.out.println(greaterInt + " is the greater integer");
+        float auxf = User.PI;
     }
 }
