@@ -3,8 +3,11 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        User newUser = new User();
+        User newUser = new User("baa", 23);
 
-        float auxf = User.PI;
+        newUser.setUsername("bo");
+
+        System.out.println(newUser.getUsername());
+        System.out.println(newUser.getAge());
     }
 }
