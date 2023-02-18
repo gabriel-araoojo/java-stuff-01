@@ -9,5 +9,9 @@ public class Main {
 
         System.out.println(newUser.getUsername());
         System.out.println(newUser.getAge());
+
+        Post newPost = new Post(newUser.getUsername(), newUser.getAge(), "oba oba oba");
+
+        newPost.formatPost();
     }
 }
