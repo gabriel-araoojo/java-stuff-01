@@ -1,11 +1,27 @@
 import java.util.*;
+import java.lang.*;
 
 
 public class Main {
     public static void main(String[] args) {
-        User newUser = new User("baa", 23);
+        Scanner tempScanner = new Scanner(System.in);
+        String username;
 
-        newUser.setUsername("bo");
+        try {
+            username = tempScanner.nextLine();
+            throw new ArithmeticException();
+        }
+        catch (Exception e) {
+            System.out.println(e);
+            username = tempScanner.nextLine();
+        }
+        finally {
+            System.out.println("everything's fine");
+        }
+
+        User newUser = new User("bo", 23);
+
+        newUser.setUsername(username);
 
         System.out.println(newUser.getUsername());
         System.out.println(newUser.getAge());

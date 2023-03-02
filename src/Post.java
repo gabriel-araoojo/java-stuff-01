@@ -5,8 +5,6 @@ public class Post extends User {
         super(newUsername, newAge);
         postContent = newPostContent;
     }
-
-
     public void formatPost() {
         System.out.println(
                 "@" + getUsername() + ":\n" + postContent
